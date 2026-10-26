@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julia Bondar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Julia Bondar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          julia@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +12456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="./biancavandijk-cat-8410505_640.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Julia! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a Product Manager with 8+ years of experience delivering digital products, SaaS platforms, APIs, and AI-powered solutions.
+            I have led cross-functional projects, from product discovery and strategy to development, deployment, and international rollout.
+            Passionate about AI and emerging technologies, I have hands-on experience with Computer Vision and am expanding my technical skills in Generative AI, 
+            LLMs, RAG, prompt engineering, and Python.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+            <h6>Python</h6>
+            <p>AI Development Fundamentals</p>
+          </div>
+          
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
+            <h6>Generative AI</h6>
+            <p>LLMs & Prompt Engineering</p>
+          </div>
+          
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"/>
+            <h6>Agile Project Management</h6>
+            <p>8+ years experience, Scrum & Kanban</p>
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div style="clear:both;"></div>
+      
+        <div id="projects-container" class="projects-container">
+      
+          <div class="project-card">
+            <h3>AI-Powered Safety Monitoring</h3>
+            <ul>
+              <li>Led the development and international rollout of an AI Computer Vision solution to improve workplace safety and reduce incidents.</li>
+            </ul>
+          </div>
+          <hr>
+      
+          <div class="project-card">
+            <h3>API Platform Optimization</h3>
+            <ul>
+              <li>Managed the evolution of a B2B API platform, improving integrations, scalability, and connectivity for multiple clients.</li>
+            </ul>
+          </div>
+          <hr>
+      
+          <div class="project-card">
+            <h3>Website Accessibility & Compliance</h3>
+            <ul>
+              <li>Managed accessibility improvements across 20 public sector websites, ensuring compliance with RGAA standards and improving the user experience.</li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+      
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+      
+        <div class="all_recommendations" id="all_recommendations">
+      
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Julia is an outstanding Product Manager who combines
+            strategic thinking with strong execution skills.
+            She consistently delivers innovative solutions while
+            keeping business objectives and user needs aligned.
+            <span>&#8221;</span>
+          </div>
+      
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Julia was a great experience.
+            Her expertise in API integrations and agile methodologies
+            helped our team improve collaboration, streamline processes,
+            and successfully deliver complex projects.
+            <span>&#8221;</span>
+          </div>
+      
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Julia brings creativity, technical curiosity, and excellent
+            communication skills to every project.
+            Her ability to understand AI technologies and translate
+            business challenges into practical solutions is impressive.
+            <span>&#8221;</span>
+          </div>
+      
+        </div>
+      </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          
+      </a>
+    </div>
+
+    <div class="popup flex_center" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
